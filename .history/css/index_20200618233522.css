@@ -1,0 +1,12 @@
+/* 背景图片 */
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0 auto;
+    padding: 0 0 ;
+    background-color: #000000;
+    background-image: url(../img/user_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    overflow: auto;
+}

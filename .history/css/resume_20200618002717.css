@@ -1,0 +1,10 @@
+.table-title{
+    color: red;
+}
+.left-column{
+    width: 300px;
+}
+.right-column{
+    width: 600px;
+    text-align: center;
+}

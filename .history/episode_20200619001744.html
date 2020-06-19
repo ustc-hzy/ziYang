@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/episode.css" type="text/css">
+    <title>剧集收藏</title>
+    <styletype="text/css">
+ 
+    　　.cover, .back{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        backface-visibility: hidden;
+        transition: transform .8s ease-in-out;
+    }
+ 
+　　</style>
+</head>
+<body>
+    <header>
+        <!-- 主体内容 -->
+        <div class="inner">
+            <!-- 用于控制菜单栏开关 -->
+            <input type="checkbox" id="ham">
+            <!-- 菜单栏icon -->
+            <label for="ham">
+                <div class="hamburger-container">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </label>
+            <!-- 菜单栏各项 -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">网站首页</a></li>
+                    <li><a href="resume.html">个人简历</a></li>
+                    <li><a href="album.html">旅行相册</a></li>
+                    <li><a href="episode.html">剧集收藏</a></li>
+                </ul>
+            </nav>
+            <!-- 打开菜单栏的遮罩 -->
+            <div class="mask"></div>
+        </div>
+        <div class="content-container">
+            <div class="card-wrap">
+                <div class="cover">
+                    <img src="img/episode/YM.jpg" width="400px">
+                </div>
+                <div class="back">
+                    <img src="img/episode/Shelid.jpg" width="400px">
+                </div>
+            </div>
+        </div>
+    </header>
+</body>
+</html>

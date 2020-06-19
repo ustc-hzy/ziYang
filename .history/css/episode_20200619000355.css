@@ -1,0 +1,33 @@
+/* 背景图片 */
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0 auto;
+    padding: 0 0 ;
+    background-color: #000000;
+    overflow: auto;
+}
+.content-container{
+    position: relative;
+    top: 20px;
+}
+.card-wrap{
+    margin: 50px;
+    transform: rotateY(0deg);
+}
+.cover .back{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+.back{
+    transform: rotateY(-180deg);
+}
+.card-wrap:hover .cover{
+    transform: perspective(1000px) rotateY(180deg);
+    backface-visibility: hidden;
+}
+.card-wrap:hover .cover{
+    transform: perspective(1000px) rotateY(0deg);
+    backface-visibility: hidden;
+}

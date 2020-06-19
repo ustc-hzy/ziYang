@@ -1,0 +1,11 @@
+.table-title{
+    color: #000000;
+    font-size: 32px;
+    font-weight: bold;
+}
+.left-column{
+    width: 400px;
+}
+.right-column{
+    width: 600px;
+}

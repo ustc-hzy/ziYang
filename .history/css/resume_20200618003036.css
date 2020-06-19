@@ -1,0 +1,13 @@
+.table-title{
+    color: ##7cb0bb;
+    font-size: 32px;
+    font-weight: bold;
+    padding: 10px 0 ;
+    background-color: #fff;
+}
+.left-column{
+    width: 400px;
+}
+.right-column{
+    width: 600px;
+}

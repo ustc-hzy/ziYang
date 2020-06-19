@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/resume.css" type="text/css">
+    <title>个人简历</title>
+</head>
+<body>
+    <header>
+        <!-- 导航栏部分 -->
+        <div class="inner">
+            <!-- 用于控制菜单栏开关 -->
+            <input type="checkbox" id="ham">
+            <!-- 菜单栏icon -->
+            <label for="ham">
+                <div class="hamburger-container">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </label>
+            <!-- 菜单栏各项 -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">网站首页</a></li>
+                    <li><a href="resume.html">个人简历</a></li>
+                    <li><a href="album.html">旅行相册</a></li>
+                    <li><a href="asset.html">PS作品集</a></li>
+                    <li><a href="episode.html">剧集收藏</a></li>
+                </ul>
+            </nav>
+            <!-- 打开菜单栏的遮罩 -->
+            <div class="mask"></div>
+        </div>
+
+        <!-- 简历部分 -->
+        <div class="content-container">
+            <table>
+                <caption class="table-title">个人简历</caption>
+                <tr>
+                    <!-- 左侧一列，共三行 -->
+                    <td class="left-column">
+                        <table>
+                            <tr>
+                                <!-- 头像 -->
+                                <td class="left-column portary" align="center">
+                                    <img src="img/user.png" width="150px">
+                                </td>
+                            </tr>
+                            <tr>
+                                <!-- 基本信息 -->
+                                <td  align="center">
+                                    <table>
+                                        <div class="small-table-title"><img src="img/label.png" width="25px"> <span>Basic info. 基本信息</span></div>
+                                        <tr>
+                                            <td>个人信息</td>
+                                            <td>黄梓炀 / 男 / 21岁 / 大三</td>
+                                        </tr>
+                                        <tr>
+                                            <td>政治面貌</td>
+                                            <td>党员</td>
+                                        </tr>
+                                        <tr>
+                                            <td>籍贯</td>
+                                            <td>广东 汕头</td>
+                                        </tr>
+                                        <tr>
+                                            <td>学校</td>
+                                            <td>中南财经政法大学</td>
+                                        </tr>
+                                        <tr>
+                                            <td>专业</td>
+                                            <td>
+                                                <div>信息管理与信息系统</div>
+                                                <div>金融学（双学位）</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>GPA</td>
+                                            <td>3.61 / 4.0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>英语水平</td>
+                                            <td>CET-6</td>
+                                        </tr>
+                                        <tr>
+                                            <td>技能证书</td>
+                                            <td>信息系统集成项目管理工程师</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <!-- 联系方式 -->
+                                <td align="center">
+                                    <table class="contact">
+                                        <div class="small-table-title"><img src="img/label.png" width="25px"> <span>Contact. 联系方式</span></div>
+                                        <tr>
+                                            <td class="label">邮箱</td>
+                                            <td>1059144380@qq.com</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="label">QQ</td>
+                                            <td>1059144380</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="label">手机</td>
+                                            <td>18923968770</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <!-- 右侧一列，共三行 -->
+                    <td class="right-column">
+                        <table>
+                            <tr>
+                                <!-- 专业技能 -->
+                                <td>
+                                    <table class="skill">
+                                        <div class="small-table-title"><img src="img/label_black.png" width="30px"><span>Skil. 专业技能</span></div>
+                                        <ul>
+                                            <li>熟练掌握 Java / Python / C# 等开发语言</li>
+                                            <li>熟练使用MySQL、SQL Server及SQL查询语言</li>
+                                            <li>能够用HTML + CSS编写语义化的代码，完成较复杂的布局</li>
+                                            <li>熟悉Vue开发，能够使用node搭建基础工具</li>
+                                        </ul>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <!-- 实践经历 -->
+                                <td>
+                                    <table class="experience">
+                                        <div class="small-table-title"><img src="img/label_black.png" width="30px"><span>Experience. 项目经历</span></div>
+                                        <ul>
+                                            <li class="date">2019-12</li>
+                                            <li>组队基于WPF开发了志愿服务管理系统，主要负责数据库搭建、部分后端逻辑、及简单的聊天模块</li>
+                                            <li class="date">2020-06</li>
+                                            <li>组队基于VUE+ElementUI+Django开发了网上论坛，主要负责前端的构建
+                                                <a href="http://47.107.33.14/dist/index.html"><项目网址/a>
+                                            </li>
+                                        </ul>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <!-- 曾获奖项 -->
+                                <td>
+                                    <table class="awards">
+                                        <div class="small-table-title"><img src="img/label_black.png" width="30px"><span>Awards. 曾获奖项</span></div>
+                                        <ul>
+                                            <li>2018-2019学年获校二等奖学金</li>
+                                            <li>2019年获第七届世界军人运会优秀志愿者</li>
+                                        </ul>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </header>
+</body>
+</html>

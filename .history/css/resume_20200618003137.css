@@ -1,0 +1,15 @@
+table{
+    background-color: #7cb0bb;
+}
+.table-title{
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: bold;
+    padding: 10px 0 ;
+}
+.left-column{
+    width: 400px;
+}
+.right-column{
+    width: 600px;
+}

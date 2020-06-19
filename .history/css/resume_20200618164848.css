@@ -1,0 +1,25 @@
+.content-container{
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+}
+table{
+    border-spacing: 0;
+}
+.table-title{
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: bold;
+    padding: 10px 0 ;
+    background-color: #7cb0bb;
+}
+.left-column{
+    width: 400px;
+    background-color: #424244;
+}
+.right-column{
+    width: 600px;
+    background-color: #f3f3f5;
+}

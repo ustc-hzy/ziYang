@@ -1,0 +1,55 @@
+/* 背景图片 */
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0 auto;
+    padding: 0 0 ;
+    background-color: #ffffff;
+    background-image: url(../img/user_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    overflow: auto;
+}
+/* 主题内容框 */
+.content-container{
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%,-46%);
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(26,26,26,0.5);
+    display: flex;
+}
+.card-container{
+    width: 1200px;
+    height: 600px;
+    overflow: hidden;
+}
+.login-card{
+    background-color: yellow;
+    width: 1200px;
+    height: 600px;
+}
+.sgin-card{
+    background-color: red;
+    width: 1200px;
+    height: 600px;
+}
+#login:checked + .login-card{
+    transform: translateY(100%);
+    transition: all 0.3s ease-in-out;
+}
+#login:checked + .sgin-card{
+    transform: translateY(-100%);
+    transition: all 0.3s ease-in-out;
+}
+/* 用于开关的checkbox */
+#login{
+    display: none;
+}
+.button{
+    width: 120px;
+    height: 60px;
+    background-color: #fff;
+    position: relative;
+}

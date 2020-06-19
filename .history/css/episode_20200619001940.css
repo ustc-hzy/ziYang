@@ -1,0 +1,41 @@
+/* 背景图片 */
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0 auto;
+    padding: 0 0 ;
+    background-color: #000000;
+    background-image: url(../img/user_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    overflow: auto;
+}
+.content-container{
+    position: relative;
+    top: 20px;
+}
+.card-wrap{
+    width: 400px;
+    height: 400px;
+    position: relative;
+    margin: 50px;
+    transform: rotateY(0deg);
+    perspective: 1000px;
+}
+.cover, .back{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    transition: transform .8s ease-in-out;
+    box-shadow: 0 5px 20px rgba(26,26,26,1);
+}
+.back{
+    transform: rotateY(-180deg);
+}
+.card-wrap:hover .cover{
+    transform: rotateY(180deg);
+}
+.card-wrap:hover .back{
+    transform: rotateY(0deg);
+}

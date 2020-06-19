@@ -1,0 +1,25 @@
+/* 背景图片 */
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0 auto;
+    padding: 0 0 ;
+    background-color: #000000;
+    overflow: auto;
+}
+.content-container{
+    position: relative;
+    top: 20px;
+}
+.card-wrap{
+    margin: 50px;
+}
+.cover .back{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+img{
+    transform: perspective(1000px) rotateY();
+    backface-visibility: hidden;
+}

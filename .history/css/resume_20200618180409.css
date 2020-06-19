@@ -1,0 +1,73 @@
+/* 主题内容框 */
+.content-container{
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%,-46%);
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(26,26,26,0.5);
+}
+table{
+    border-spacing: 0;
+}
+table tr td {
+    height: 30px;
+    padding: 0px 10px;
+}
+/* 大标题 */
+.table-title{
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: bold;
+    padding: 10px 0 ;
+    background-color: #dbba53;
+}
+
+/* 简历左侧部分 */
+.left-column{
+    width: 1000px;
+    background-color: #000000;
+    color: #f3f3f5;
+}
+/* 简历右侧部分 */
+.right-column{
+    width: 1500px;
+    background-color: #f3f3f5;
+}
+/* 头像 */
+.portary img{
+    margin: 15px 0px;
+}
+/* 左侧小标题 */
+.left-column .small-table-title{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #dbba53;
+}
+/* 右侧小标题 */
+.right-column .small-table-title{
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: 20px;
+}
+.right-column .small-table-title span{
+    border-bottom: 5px solid #dbba53;
+}
+.contact .label{
+    position: relative;
+    right: 35px;
+}
+.contact{
+    margin-bottom: 15px;
+}
+/* 标签icon */
+.small-table-title img{
+    margin: 0 20px;
+}
+.skill{
+    position: relative;
+    bottom: 500px;
+}

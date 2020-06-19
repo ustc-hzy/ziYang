@@ -1,0 +1,19 @@
+table{
+    background-color: #7cb0bb;
+}
+.table-title{
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: bold;
+    padding: 10px 0 ;
+    background-color: #7cb0bb;
+}
+.left-column{
+    width: 400px;
+}
+.right-column{
+    width: 600px;
+}
+td{
+    text-align="center";
+}

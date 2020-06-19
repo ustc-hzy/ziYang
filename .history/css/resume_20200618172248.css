@@ -1,0 +1,47 @@
+.content-container{
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%,-45%);
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(26,26,26,0.5);
+}
+table{
+    border-spacing: 0;
+}
+table tr td {
+    height: 24px;
+    padding: 0px 10px;
+}
+.small-table-title{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    right: 50px;
+    margin-top: 20px;
+}
+.table-title{
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: bold;
+    padding: 10px 0 ;
+    background-color: #dbba53;
+}
+.left-column{
+    width: 800px;
+    background-color: #000000;
+    color: #f3f3f5;
+}
+.right-column{
+    width: 800px;
+    background-color: #f3f3f5;
+}
+.portary img{
+    margin: 20px 10px;
+}
+.contact .label{
+    position: relative;
+    right: 35px;
+}

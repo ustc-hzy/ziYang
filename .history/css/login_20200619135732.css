@@ -1,0 +1,162 @@
+/* 背景图片 */
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0 auto;
+    padding: 0 0 ;
+    background-color: #ffffff;
+    background-image: url(../img/user_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    overflow: auto;
+}
+/* 主题内容框 */
+.content-container{
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%,-46%);
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(26,26,26,0.5);
+    display: flex;
+}
+.card-container{
+    width: 800px;
+    height: 600px;
+    overflow: hidden;
+}
+/* 用于开关的checkbox */
+#login-box{
+    display: none;
+}
+/* 切换表单按钮样式 */
+.button{
+    width: 100px;
+    height: 100px;
+    background-color: #000000;
+    transition: all 0.3s ease-in-out;
+}
+/* 切换按钮的文字内容 */
+.button::before{
+    display: flex;
+    width: 80px;
+    position: relative;
+    top: 20px;
+    left: 25px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #dbba53;
+    letter-spacing: 10px;
+    line-height: 30px;
+    content: "前往注册";
+}
+/* 点击切换按钮，登录表单下移至离开父元素框显示范围 */
+#login-box:checked ~ .card-container > .login-card{
+    transform: translateY(100%);
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+}
+/* 点击切换按钮，注册表单上移至离开父元素框显示范围 */
+#login-box:checked ~ .card-container > .sgin-card{
+    transform: translateY(-100%);
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+}
+/* 点击切换按钮，更换按钮样式 */
+#login-box:checked + label .button{
+    background-color: #dbba53;
+    transition: all 0.3s ease-in-out;
+}
+/* 点击切换按钮，更换按钮文字内容 */
+#login-box:checked + label .button::before{
+    color: #000000;
+    content: "前往登录";
+}
+/* 右侧大卡片 */
+.login-card, .sgin-card{
+    width: 1200px;
+    height: 600px;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-wrap: nowrap;
+}
+/* 登录表单部分 */
+.login-card .pic,.form{
+    width: 400px;
+    height: 600px;
+    overflow: hidden;
+}
+.login-card .form{
+    background-color: #fff;
+    position: relative;
+    top: 23%;
+    left: 3%;
+}
+.login-card .item{
+    margin-top: 30px;
+    text-align: left;
+}
+.login-card .item input{
+    width: 80%;
+    height: 50px;
+    position: relative;
+    border: 2px solid #dbba53;
+    color: #825a34;
+    font-size: 20px;
+    font-weight: bold;
+}
+.login-card .item div{
+    font-size: 20px;
+    font-weight: bold;
+    color: #825a34;
+    margin-bottom: 10px;
+}
+.login-card .item .submit{
+    background-color: #dbba53;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+}
+/* 注册表单部分 */
+.sgin-card .pic{
+    width: 400px;
+    height: 600px;
+    overflow: hidden;
+}
+.sgin-card .form{
+    width: 350px;
+    height: 600px;
+    overflow: hidden;
+}
+.sgin-card .form{
+    background-color: #fff;
+    position: relative;
+    top: 10%;
+    padding-left: 50px;
+}
+.sgin-card .item{
+    margin-top: 30px;
+    text-align: left;
+}
+.sgin-card .item input{
+    width: 80%;
+    height: 50px;
+    position: relative;
+    border: 2px solid #000000;
+    color: #000000;
+    font-size: 20px;
+    font-weight: bold;
+}
+.sgin-card .item div{
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 10px;
+}
+.sgin-card .item .submit{
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+}

@@ -1,0 +1,150 @@
+/* 背景图片 */
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0 auto;
+    padding: 0 0 ;
+    background-color: #000000;
+    background-image: url(../img/user_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    overflow: auto;
+}
+/* 导航栏背景 */
+header{
+    height: 60px;
+    background-color: #000000;
+    opacity: 0.8;
+}
+/* 导航栏内部 */
+.inner{
+    width: 96%;
+    margin: auto;
+}
+/* 用于开关的checkbox */
+#ham{
+    display: none;
+}
+/* 当chexkbox选中时，改变第一条线 */
+#ham:checked + label .hamburger-container span:nth-child(1){
+    transform: rotate(45deg);
+    top: 11px; 
+    transition: transform .3s ease-in-out, top .3s ease-in-out 3s;
+}
+/* 当chexkbox选中时，第二条线消失 */
+#ham:checked + label .hamburger-container span:nth-child(2){
+    opacity: 0;
+}
+/* 当chexkbox选中时，改变第三条线 */
+#ham:checked + label .hamburger-container span:nth-child(3){
+    transform: rotate(-45deg);
+    top: -11px;
+    transition: transform .3s ease-in-out, top .3s ease-in-out 3s;
+}
+/* 导航栏icon的第二天横线 */
+.hamburger-container span:nth-child(2){
+    margin-top: 10px;
+    transition: opacity .1s ease-in-out .1s;
+}
+/* 导航栏icon的第三天横线 */
+.hamburger-container span:nth-child(3){
+    margin-top: 10px;
+}
+/* 导航栏icon */
+.hamburger-container{
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: 20px;
+    z-index: 100;
+}
+/* 导航栏icon的横线 */
+.hamburger-container span{
+    display: block;
+    height: 2px;
+    background-color: #dbba53;
+    position: relative;
+    transition: transform .3s ease-in-out, top .3s ease-in-out .3s;
+}
+/* 菜单栏子项总的效果 */
+nav{
+    position: absolute;
+    z-index: 100;
+    color: #fff;
+    top: 50px;
+    transform: scaleY(0); /* 垂直方向缩小到0，即关闭 */
+    transition: all .3s ease-in-out;
+    transform-origin: 50% 0; /* 将中心点移到顶部 */
+    opacity: 0; /* 渐入渐出效果 */
+}
+/* 当chexkbox选中时，展示nav */
+#ham:checked ~ nav{
+    transform: scaleY(1); /* 垂直方向扩大到1，即打开 */
+    opacity: 1;
+    transition: all .3s ease-in-out;
+}
+/* 导航栏的遮罩 */
+.mask {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #000000;
+    opacity: 0;
+    z-index: 10; /* 防止遮住要显示的部分 */
+    transform: scaleY(0);
+    transform-origin: 50% 0;
+    transition: all .3s ease-in-out;
+}
+/* 当chexkbox选中时，打开遮罩 */
+#ham:checked ~ .mask{
+    opacity: 1;
+    transform: scaleY(1);
+    transition: all .3s ease-in-out;
+}
+nav ul{
+    position: relative;
+    right: 40px;
+    margin-top: 2em;
+    list-style-type:none;
+    font-size: 35px;
+}
+nav ul li{
+    margin-top: 1em;
+}
+nav ul li:hover{
+    transform: scale(1.2, 1.2); /* transform从元素中心开始变化，不会影响到其他元素 */
+}
+nav ul li a:hover{
+    color: #dbba53;
+}
+/* 导航栏菜单项 */
+nav a{
+    text-decoration: none;
+    color: #ffffff;
+}
+/* 居中姓名框 */
+.name-container{
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    /* background-color: rgba(0,0,0,0.3); 此处使用opacity会让文字也变透明 */
+    box-shadow: 0 5px 20px rgba(26,26,26,0.5);
+}
+/* 居中姓名 */
+.mid-name{
+    color: #fff;
+    font-size: 50px;
+    border: 8px solid #fff;
+    padding: 40px;
+    text-align: center;
+}
+/* 居中学号 */
+.mid-name .id{
+    margin-top: 10px;
+    font-size: 40px;
+}

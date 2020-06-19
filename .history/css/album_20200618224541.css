@@ -1,0 +1,80 @@
+/* 背景图片 */
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0 auto;
+    padding: 0 0 ;
+    background-color: #000000;
+    /* background-image: url(../img/user_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;  */
+    overflow: auto;
+}
+/* 主题内容框 */
+.content-container{
+    width: 100vw;
+    column-count: 3;
+    column-gap: 0;
+    position: relative;
+    top: 20px;
+}
+.item{
+    padding: 10px;
+    position: relative;
+}
+.item img{
+    display: block;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    opacity: 0.5;
+}
+.item img:hover{
+    transform: scale(1.1, 1.1);
+    opacity: 1;
+}
+.wuyuan .item::before{
+    position: absolute;
+    display: block;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    opacity: 0.5;
+    font-size: 100px;
+    text-align: center;
+    color: #ffffff;
+    content: "婺源";
+}
+.wuyuan .item:hover::before{
+    opacity: 0;
+}
+.shangrao .item::before{
+    position: absolute;
+    display: block;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    opacity: 0.5;
+    font-size: 100px;
+    text-align: center;
+    color: #ffffff;
+    content: "上饶";
+}
+.shangrao .item:hover::before{
+    opacity: 0;
+}
+.shennongjia .item::before{
+    position: absolute;
+    display: block;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    opacity: 0.5;
+    font-size: 100px;
+    text-align: center;
+    color: #ffffff;
+    content: "神农架";
+}
+.shennongjia .item:hover::before{
+    opacity: 0;
+}
